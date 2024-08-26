@@ -9,7 +9,7 @@ Answer the following questions in the provided markdown file before turning in t
 - Who created TypeScript?
   Microsoft
 - What does the TypeScript `Compiler` do?
-
+  It scans through the ts code and it looks for errors as well as convert it to js so that the web browser can use it
 - How can you compile TypeScript to JavaScript?
   by using the tsc compiler
 - What are some benefits of using TypeScript?
