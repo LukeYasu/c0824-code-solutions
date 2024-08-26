@@ -21,7 +21,7 @@ Answer the following questions in the provided markdown file before turning in t
 - What is the purpose of a boolean?
   it represents a true or false value
 - What does the `=` operator mean in JavaScript?
-  it is an assignment operator and it gives value to a variable
+  it is an assignment operator and it gives value to whatever is on the left side of it
 - How do you update the value of a variable?
   you can either edit the code to change the value or write the variable and assign it a new value on a lower line
 - What is the difference between `null` and `undefined`?
