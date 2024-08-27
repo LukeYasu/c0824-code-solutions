@@ -2,7 +2,7 @@ const fullName: string = 'Lucas Yasumura';
 const isCool: boolean = true;
 const totalPets: number = 1;
 const empty: null = null;
-const nothing: undefined = undefined;
+let nothing;
 
 console.log('Full Name: ', fullName);
 console.log('Is Cool: ', isCool);

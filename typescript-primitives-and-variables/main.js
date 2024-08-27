@@ -1,9 +1,9 @@
-'use strict';
+"use strict";
 const fullName = 'Lucas Yasumura';
 const isCool = true;
 const totalPets = 1;
 const empty = null;
-const nothing = undefined;
+let nothing;
 console.log('Full Name: ', fullName);
 console.log('Is Cool: ', isCool);
 console.log('Total Pets: ', totalPets);
