@@ -47,7 +47,7 @@ function doubleAll(numbers: []): number[] {
   }
   return doubled;
 }
-function getKeys(obj: Record<string, unknown>): unknown[] {
+function getKeys(obj: Record<string, unknown>): string[] {
   const key = [];
   for (const prop in obj) {
     key.push(prop);

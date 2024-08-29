@@ -8,7 +8,7 @@
             getValues
  */
 function getNumbersToTen() {
-  let numbers = [];
+  const numbers = [];
   let currentNumber = 1;
   while (currentNumber <= 10) {
     numbers.push(currentNumber);
@@ -17,7 +17,7 @@ function getNumbersToTen() {
   return numbers;
 }
 function getEvenNumbersToTwenty() {
-  let evenNumbers = [];
+  const evenNumbers = [];
   let currentNumber = 2;
   while (currentNumber <= 20) {
     evenNumbers.push(currentNumber);
