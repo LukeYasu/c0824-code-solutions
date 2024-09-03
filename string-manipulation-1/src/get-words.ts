@@ -9,5 +9,3 @@ function getWords(string: string): string[] {
   }
   return wordsArr;
 }
-
-console.log(getWords(''));

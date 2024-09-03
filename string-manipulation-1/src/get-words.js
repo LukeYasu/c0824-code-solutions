@@ -10,4 +10,3 @@ function getWords(string) {
   }
   return wordsArr;
 }
-console.log(getWords(''));
