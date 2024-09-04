@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Form</title>
+  </head>
+  <body>
+    <form action="https://example.com/register" method="get">
+      <h1>Coding Form!</h1>
+      <div><label for="email">Email: </label></div>
+      <input type="email" id="email" name="email" required />
+
+      <div>
+        <label for="reason">Why is coding cool?</label>
+      </div>
+      <select id="reason" name="reason" required>
+        <option value="">Please Select</option>
+        <option value="Because it's interesting">
+          Because it's interesting
+        </option>
+        <option value="Because it's fun">Because it's fun</option>
+        <option value="Because it's powerful">Because it's powerful</option>
+      </select>
+
+      <p><label for="language">Favorite Language (choose one)</label></p>
+      <label> <input type="radio" name="language" value="HTML" />HTML </label>
+      <label> <input type="radio" name="language" value="CSS" />CSS </label>
+      <label>
+        <input type="radio" name="language" value="JavaScript" />JavaScript
+      </label>
+
+      <p>
+        <label for="signUp"
+          >Would you like to sign up for more information?</label
+        >
+      </p>
+      <label
+        ><input id="signUp" type="checkbox" name="signUp" value="true" />Sign me
+        up!</label
+      >
+
+      <p><label for="comments">Comments:</label></p>
+      <div>
+        <textarea id="comments" name="comments" rows="10" cols="37"></textarea>
+      </div>
+      <button type="submit">Submit</button>
+    </form>
+  </body>
+</html>
