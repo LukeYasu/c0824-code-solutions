@@ -6,7 +6,7 @@
     <title>HTML Form</title>
   </head>
   <body>
-    <form action="https://example.com/register" method="post">
+    <form action="https://example.com/register" method="get">
       <h1>Coding Form!</h1>
       <div><label for="email">Email: </label></div>
       <input type="email" id="email" name="email" required />
@@ -36,11 +36,15 @@
         >
       </p>
       <label
-        ><input type="checkbox" name="signUp" value="true" />Sign me up!</label
+        ><input id="signUp" type="checkbox" name="signUp" value="true" />Sign me
+        up!</label
       >
 
       <p><label for="comments">Comments:</label></p>
-      <textarea id="comments" name="comments" rows="10" cols="37"></textarea>
+      <div>
+        <textarea id="comments" name="comments" rows="10" cols="37"></textarea>
+      </div>
+      <button type="submit">Submit</button>
     </form>
   </body>
 </html>
