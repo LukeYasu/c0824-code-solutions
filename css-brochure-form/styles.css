@@ -1,0 +1,57 @@
+.poppins-regular {
+  font-family: Poppins, sans-serif;
+  font-style: normal;
+}
+
+h3 {
+  display: flex;
+  justify-content: center;
+  color: #ec5c57;
+  font-weight: normal;
+}
+
+div label {
+  font-size: 12px;
+  font-weight: 400;
+  display: block;
+  text-align: left;
+  margin-top: 15px;
+  margin-left: 35.5%;
+}
+
+form input {
+  width: 450px;
+  height: 40px;
+  border-radius: 5px;
+  border-width: 1px;
+  border-color: #a6aaa9;
+  border-style: solid;
+  display: block;
+  margin: 0 auto;
+}
+
+select {
+  height: 40px;
+  width: 450px;
+  background-color: #f3f3f3;
+  border-radius: 3px;
+  border-width: 1px;
+  border-color: #a6aaa9;
+  display: block;
+  margin: 0 auto 10px;
+}
+
+select:hover {
+  cursor: pointer;
+}
+
+button {
+  color: white;
+  background-color: #ec5c57;
+  font-size: 16px;
+  padding: 6px 20px;
+  border: 0;
+  border-radius: 50px;
+  display: block;
+  margin-left: 59%;
+}
