@@ -1,0 +1,20 @@
+input {
+  padding: 5px;
+  font-size: 16px;
+  border-radius: 1;
+  border: 2;
+}
+
+input:hover {
+  background-color: black;
+  color: white;
+}
+
+#head {
+  background-color: black;
+  color: white;
+}
+
+#body tr:nth-child(odd) {
+  background-color: #d2d2d2;
+}
