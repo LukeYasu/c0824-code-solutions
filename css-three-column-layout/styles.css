@@ -3,7 +3,7 @@ body {
 }
 
 .container {
-  /* font-family: Lato; */
+  /* font-family: lato; */
   color: white;
   width: 1300px;
   margin: 0 auto;
@@ -17,7 +17,7 @@ body {
 
 .header {
   margin-top: 50px;
-  font-size: 23px;
+  font-size: 20px;
 }
 
 .row-one-third {
@@ -31,10 +31,21 @@ body {
 .col-image {
   width: 100px;
   height: 100px;
-  border: 80px solid white;
+  border: 90px solid white;
   border-radius: 500px;
+  z-index: 1;
 }
 
 img {
+  position: relative;
   width: 100px;
+  z-index: 2;
+  right: 50px;
+  bottom: 48px;
+}
+
+p {
+  width: 250px;
+  line-height: 25px;
+  color: rgb(220, 220, 221);
 }
