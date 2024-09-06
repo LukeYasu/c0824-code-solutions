@@ -12,28 +12,35 @@
 
 #bulbasaur {
   /* your code here */
+  position: relative;
+  right: 275px;
+  top: 20px;
 }
 
 #charmander {
   /* your code here */
   position: relative;
   top: 40px;
+  right: 275px;
 }
 
 #squirtle {
   /* your code here */
   position: relative;
   top: 80px;
+  right: 275px;
 }
 
 #pikachu {
   /* your code here */
   position: relative;
   top: 160px;
+  right: 275px;
 }
 
 #jigglypuff {
   /* your code here */
   position: relative;
   top: 320px;
+  right: 275px;
 }
