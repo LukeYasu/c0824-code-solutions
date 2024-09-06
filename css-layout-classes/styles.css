@@ -2,6 +2,7 @@
   max-width: 800px;
   margin: 0 auto;
   flex-direction: column;
+  font-family: sans-serif;
 }
 
 .row {
@@ -11,12 +12,21 @@
 
 .column-one-third {
   display: flex;
-  width: 100%;
   max-width: calc(100% / 3);
+  flex-direction: column;
+}
+
+.column-two-thirds {
+  display: flex;
+  flex-direction: column;
+  max-width: calc(2 * (100% / 3));
 }
 
 .column-one-fourth {
   display: flex;
-  width: 100%;
   max-width: calc(100% / 4);
+}
+
+img {
+  width: 100%;
 }
