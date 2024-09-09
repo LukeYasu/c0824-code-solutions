@@ -1,0 +1,215 @@
+.container {
+  display: flex;
+  width: 100vw;
+  flex-direction: column;
+}
+
+.row {
+  display: flex;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  width: 100vw;
+  height: 100px;
+  border-bottom: solid;
+  border-color: #e6e9ec;
+  background-color: white;
+  position: fixed;
+  z-index: 10;
+}
+
+.col-left-header > .header-logo {
+  padding: 31px 100px;
+  width: 370px;
+  border: 1px;
+}
+
+.col-right-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 100px;
+}
+
+.header-button > button {
+  font-family: sans-serif, Avenir;
+  font-size: 18px;
+  color: #a0a0a0;
+  background-color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 15px 20px;
+  margin: 0 20px;
+}
+
+.home-background {
+  position: absolute;
+  z-index: -1;
+  top: 175px;
+  padding: 0 50px;
+  width: 100vw;
+  filter: brightness(70%);
+}
+
+.col-left-home {
+  margin: 250px 150px;
+  width: 500px;
+  font-family: serif, 'Tiempos Headline';
+  font-size: 20px;
+  color: white;
+}
+
+.col-left-home > p {
+  width: 600px;
+  font-family: sans-serif, Avenir;
+  line-height: 35px;
+}
+
+.get-started-button {
+  font-family: sans-serif, Avenir;
+  font-size: 30px;
+  background-color: #294363;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 20px 60px;
+}
+
+.col-left-home > button {
+  position: relative;
+  top: 50px;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.col-info {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  background-color: #fafafa;
+  color: #6e6e6e;
+  text-align: center;
+  padding-bottom: 100px;
+  border-bottom: 1px solid #e6e9ec;
+}
+
+.row-info-top {
+  font-size: 25px;
+  font-weight: 100;
+  padding: 50px 450px;
+}
+
+.row-info-top > p {
+  font-family: sans-serif, Avenir;
+  font-size: 20px;
+  line-height: 35px;
+}
+
+.row-info-bottom {
+  display: flex;
+  flex-direction: column;
+}
+
+.row-info-locations {
+  display: flex;
+  justify-content: center;
+  justify-content: space-around;
+  font-family: sans-serif, Avenir;
+  font-size: 23px;
+  font-weight: 100;
+}
+
+.learn-more {
+  display: flex;
+  justify-content: space-between;
+  width: 100vw;
+  height: 250px;
+  align-items: center;
+  line-height: 20px;
+  background-color: white;
+}
+
+.col-left-learn-more {
+  color: #6e6e6e;
+  font-size: 40px;
+  padding-left: 75px;
+  font-weight: 500;
+}
+
+.col-left-learn-more > .learn-more-desc {
+  font-family: sans-serif, Avenir;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.col-right-learn-more {
+  padding-right: 100px;
+}
+
+.footer-info {
+  display: flex;
+  background-color: #525351;
+  width: 100vw;
+  height: 500px;
+  justify-content: space-between;
+  color: white;
+}
+
+.col-footer-info-left {
+  display: flex;
+  width: 50vw;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 50px;
+  font-family: sans-serif, Avenir;
+}
+
+.col-footer-info-left img {
+  padding-bottom: 50px;
+  width: 150px;
+}
+
+.col-footer-info-left p {
+  line-height: 0;
+  font-size: 18px;
+  font-weight: 300;
+}
+
+.col-footer-info-right {
+  width: 50vw;
+  display: flex;
+  padding-top: 120px;
+  padding-left: 0;
+  justify-content: start;
+  font-family: sans-serif, Avenir;
+  font-size: 22px;
+  font-weight: 200;
+}
+
+.col-footer-company {
+  padding-right: 240px;
+}
+
+.footer-links {
+  display: flex;
+  width: 100vw;
+  height: 170px;
+  font-family: sans-serif, Avenir;
+  font-size: 20px;
+  color: #6e6e6e;
+  padding-top: 50px;
+  padding-left: 100px;
+}
+
+.footer-links p {
+  padding-right: 30px;
+}
+
+#contact-us > button {
+  color: white;
+  background-color: #294363;
+}
