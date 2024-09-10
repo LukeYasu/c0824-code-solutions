@@ -1,0 +1,263 @@
+.container {
+  display: flex;
+  width: 100vw;
+  height: 500vh;
+  flex-direction: column;
+  padding-top: 0;
+}
+
+.row {
+  display: flex;
+}
+
+.col-full {
+  width: 100vw;
+}
+
+.col-one-thirds {
+  width: calc(100vw / 3);
+}
+
+.col-two-thirds {
+  width: calc((100vw / 3) * 2);
+}
+
+.col-half {
+  width: 50vw;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  width: 100vw;
+  height: 100px;
+  border-bottom: solid;
+  border-color: #e6e9ec;
+  background-color: white;
+  position: fixed;
+  align-items: center;
+  z-index: 10;
+}
+
+.col-one-third .header-logo {
+  max-width: 33vw;
+  height: 38px;
+  padding-left: 50px;
+}
+
+.header .col-two-thirds {
+  display: flex;
+  justify-content: end;
+  padding-right: 75px;
+}
+
+.header-button > button {
+  font-family: Avenir, sans-serif;
+  font-size: 18px;
+  color: #a0a0a0;
+  background-color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 15px 20px;
+  margin: 0 20px;
+}
+
+.header-button button:hover {
+  color: #294363;
+  cursor: pointer;
+}
+
+#contact-us > button {
+  color: white;
+  background-color: #294363;
+}
+
+#contact-us button:hover {
+  color: #294363;
+  background-color: white;
+  border: 1px solid #294363;
+  box-sizing: border-box;
+}
+
+.home-image img {
+  width: 100vw;
+  padding: 250px 75px;
+  z-index: -10;
+  filter: brightness(80%);
+  position: absolute;
+}
+
+.product-home {
+  color: white;
+  font-family: Avenir, sans-serif;
+  font-size: 20px;
+  justify-content: start;
+  width: 65vw;
+  padding: 500px 150px;
+  z-index: 1;
+}
+
+.product-home h1 {
+  font-weight: 100;
+  font-family: 'Tiempos Headline', serif;
+}
+
+.website-body {
+  display: flex;
+  width: 100vw;
+  background-color: #fbfbfb;
+  color: #50514f;
+  padding: 100px;
+  font-size: 20px;
+}
+
+.body-text {
+  padding-left: 100px;
+}
+
+.body-text h1 {
+  font-weight: 100;
+}
+
+.body-text p {
+  font-family: Avenir, sans-serif;
+}
+
+.body-text a {
+  font-family: Avenir, sans-serif;
+  text-decoration: none;
+  color: #0b4265;
+}
+
+.body-text .body-quote {
+  font-family: serif;
+  font-style: italic;
+}
+
+.website-body-2 {
+  display: flex;
+  width: 100vw;
+  background-color: white;
+  color: #50514f;
+  padding: 100px;
+  font-size: 20px;
+}
+
+.website-body-2 .body-text {
+  padding: 0;
+  width: 85%;
+}
+
+.learn-more {
+  width: 100vw;
+  display: flex;
+}
+
+.learn-more .col-half {
+  display: flex;
+  flex-direction: column;
+  height: 250px;
+  justify-content: center;
+  line-height: 20px;
+  background-color: white;
+  border-top: 1px solid #e6e9ec;
+}
+
+.learn-more p {
+  color: #6e6e6e;
+  font-size: 40px;
+  padding-left: 75px;
+  font-weight: 500;
+}
+
+.learn-more .learn-more-desc {
+  font-family: sans-serif, Avenir;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.get-started-button {
+  font-family: sans-serif, Avenir;
+  font-size: 20px;
+  font-weight: 100;
+  background-color: #294363;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 20px 60px;
+  margin: 0 80px 0 425px;
+}
+
+.get-started-button:hover {
+  color: #294363;
+  background-color: white;
+  border: 1px solid #294363;
+}
+
+.footer-info {
+  display: flex;
+  background-color: #525351;
+  width: 100vw;
+  height: 500px;
+  justify-content: space-between;
+  color: white;
+}
+
+.footer-info .col-half {
+  display: flex;
+  width: 50vw;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 50px;
+  font-family: sans-serif, Avenir;
+}
+
+.footer-info img {
+  padding-bottom: 50px;
+  width: 150px;
+}
+
+.footer-info a {
+  line-height: 50px;
+  font-size: 18px;
+  font-weight: 300;
+  text-decoration: none;
+  color: white;
+}
+
+.footer-info .more-info {
+  display: flex;
+  align-items: start;
+  text-decoration: none;
+}
+
+.footer-info .additional-links {
+  width: 50vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  font-family: sans-serif, Avenir;
+  font-size: 22px;
+}
+
+.footer-links {
+  display: flex;
+  width: 100vw;
+  height: 170px;
+  font-family: sans-serif, Avenir;
+  font-size: 20px;
+  color: #6e6e6e;
+  padding-left: 50px;
+  align-items: center;
+}
+
+.footer-links a {
+  padding-right: 30px;
+  text-decoration: none;
+  color: #6e6e6e;
+}
+
+a:hover {
+  color: #0b4265;
+  text-decoration: underline;
+}
