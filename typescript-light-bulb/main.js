@@ -9,10 +9,10 @@ function handleClick(event) {
   const eventTargetBackground = eventTarget.closest('body');
   console.log('eventTarget: ', eventTarget);
   console.log('eventTarget.tagName: ', eventTarget.tagName);
+  console.log('eventTarget.closest: ', eventTarget.closest('body'));
   if (eventTarget.tagName !== 'BUTTON') {
     return;
   }
-  console.log('eventTarget.closest: ', eventTarget.closest('body'));
   if (eventTarget.className === 'light-mode') {
     eventTarget.className = 'dark-mode';
     eventTargetBackground.className = 'background-dark';
