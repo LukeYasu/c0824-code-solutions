@@ -41,8 +41,8 @@ body {
   .row .col-lg-third {
     flex-basis: 33%;
   }
+}
 
-  .row .col-lg-fourth {
-    flex-basis: 25%;
-  }
+.row .col-lg-fourth {
+  flex-basis: 25%;
 }
