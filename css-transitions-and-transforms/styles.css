@@ -23,7 +23,7 @@ section {
   color: white;
   background-color: blue;
   cursor: pointer;
-  transition: all;
+  transition: all 2s ease;
 }
 
 .custom-button:hover {
