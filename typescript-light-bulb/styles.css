@@ -1,0 +1,31 @@
+div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 95vh;
+}
+
+button {
+  width: 300px;
+  height: 300px;
+  border-radius: 150px;
+  border: none;
+}
+
+.light-mode {
+  background-color: #f9ea84;
+  box-shadow: 0 0 100px 0 #f9ea84;
+}
+
+.dark-mode {
+  background-color: #252525;
+  box-shadow: 0 -10px 0 10px #0c0c0c;
+}
+
+.background-light {
+  background-color: #fef9f1;
+}
+
+.background-dark {
+  background-color: rgb(17, 17, 17);
+}
