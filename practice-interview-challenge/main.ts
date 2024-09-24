@@ -52,6 +52,7 @@ function getRangeReport(start: number, end: number): objInt {
   const average = total / totalNums;
   finalObject.average = average;
 
+  console.log(finalObject);
   return finalObject;
 }
 getRangeReport(2, 10);

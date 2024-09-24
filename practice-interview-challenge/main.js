@@ -1,5 +1,5 @@
 'use strict';
-let finalObject = {
+const finalObject = {
   total: 0,
   odds: [],
   even: [],
@@ -10,36 +10,37 @@ function getRangeReport(start, end) {
   let total = 0;
   const iterations = end - start + 1;
   for (let i = 0; i < iterations; i++) {
-    let startTotal = start + i;
+    const startTotal = start + i;
     total += startTotal;
   }
   finalObject.total = total;
-  let odd = [];
+  const odd = [];
   for (let i = 0; i < iterations; i++) {
-    let startOdd = start + i;
+    const startOdd = start + i;
     if (startOdd % 2 !== 0) {
       odd.push(startOdd);
     }
   }
   finalObject.odds = odd;
-  let even = [];
+  const even = [];
   for (let i = 0; i < iterations; i++) {
-    let startEven = start + i;
+    const startEven = start + i;
     if (startEven % 2 === 0) {
       even.push(startEven);
     }
   }
   finalObject.even = even;
-  let range = [];
+  const range = [];
   let totalNums = 0;
   for (let i = 0; i < iterations; i++) {
-    let startRange = start + i;
+    const startRange = start + i;
     range.push(startRange);
     totalNums++;
   }
   finalObject.range = range;
   const average = total / totalNums;
   finalObject.average = average;
+  console.log(finalObject);
   return finalObject;
 }
 getRangeReport(2, 10);
