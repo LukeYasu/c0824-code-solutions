@@ -1,0 +1,30 @@
+body {
+  background-color: lightblue;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.next-image-button {
+  font-size: 3rem;
+}
+
+.previous-image-button {
+  font-size: 3rem;
+}
+
+.select-circles {
+  font-size: 1rem;
+}
+
+.next-image-button:hover {
+  cursor: pointer;
+}
+
+i:hover {
+  cursor: pointer;
+}
