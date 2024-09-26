@@ -15,8 +15,7 @@ const names = [
 const evenNumbers = numbers.filter((element) => element % 2 === 0);
 console.log('filter() evenNumbers: ', evenNumbers);
 
-const namesNoD: string[] = [];
-const nonDNames = names.filter((element) =>
-  element.includes('d') || element.includes('D') ? '' : namesNoD.push(element)
+const nonDNames: string[] = names.filter((element) =>
+  element.includes('d') || element.includes('D') ? '' : nonDNames.push(element)
 );
 console.log('filter() nonDNames: ', nonDNames);
