@@ -1,0 +1,500 @@
+   63  git add layout.css
+   64  git add .
+   65  git commit -m 'code journal layout rough draft'
+   66  git add .
+   67  git commit -m 'code journal layout rough draft'
+   68  git add .
+   69  git commit -m 'code journal layout rough draft'
+   70  git add .
+   71  git commit -m 'code journal layout revised #1'
+   72  cd data.ts
+   73  cd ts
+   74  npx tsc --watch
+   75  cd ts
+   76  npx tsc --watch
+   77  cd ts
+   78  cd data.ts
+   79  npx tsc --watch
+   80  cdd ..
+   81  cd ..
+   82  npx tsc --watch
+   83  git add .
+   84  git commit -m 'code journal layout revised #1'
+   85  git switch main 
+   86  git switch issue-1-creating-layout 
+   87  npx tsc --watch
+   88  npx tsc 
+   89  npx tsc 
+   90  npx tsc 
+   91  npx tsc 
+   92  npx tsc 
+   93  npx tsc 
+   94  npx tsc 
+   95  npx tsc 
+   96  npx tsc 
+   97  npx tsc 
+   98  npx tsc 
+   99  npx tsc 
+  100  npx tsc 
+  101  npx tsc 
+  102  npx tsc 
+  103  npx tsc 
+  104  npx tsc 
+  105  npx tsc 
+  106  npx tsc --watch
+  107  git add .
+  108  git commit -m 'code journal issue #1 complete'
+  109  npx tsc --watch
+  110  git add .
+  111  git commit -m 'code journal issue #1 complete'
+  112  npx tsc --watch
+  113  git add .
+  114  git commit -m 'code journal issue #1 complete'
+  115  npx tsc
+  116  git add .
+  117  git commit -m 'code journal issue #1 complete'
+  118  npx tsc
+  119  npx tsc
+  120  git add .
+  121  git commit -m 'code journal issue #1 complete'
+  122  npx tsc
+  123  git add .
+  124  git commit -m 'code journal issue #1 complete'
+  125  npx tsc
+  126  npx tsc
+  127  git add .
+  128  git commit -m 'code journal issue #1 complete'
+  129  npx tsc
+  130  git add .
+  131  git commit -m 'code journal issue #1 complete'
+  132  git switch main
+  133  git switch issue-1-creating-layout 
+  134  git status
+  135  git switch main 
+  136  git switch issue-1-creating-layout 
+  137  git switch main
+  138  git branch -m issue-1-create-an-entry
+  139  git branch -m issue-1-creating-layout issue-1-create-an-entry 
+  140  git switch main 
+  141  git switch issue-1-creating-layout 
+  142  git branch -m issue-1-create-an-entry 
+  143  git branch --list
+  144  git branch --list
+  145  git branch --list
+  146  git switch main 
+  147  git switch issue-1-create-an-entry 
+  148  git push origin issue-1-create-an-entry 
+  149  git switch issue-1-create-an-entry 
+  150  npt tsc --watch
+  151  npx tsc --watch
+  152  cd ..
+  153  cd code-journal/
+  154  git add .
+  155  git commit -m 'code journal issue #1 complete'
+  156  git add .
+  157  git commit -m 'code journal issue #1 complete'
+  158  git add .
+  159  git commit -m 'code journal issue #1 complete'
+  160  npx tsc --watch
+  161  git add .
+  162  git commit -m 'code journal issue #1 complete'
+  163  git push origin issue-1-create-an-entry 
+  164  git add .
+  165  git commit -m 'code journal issue #1 complete'
+  166  git push origin issue-1-create-an-entry 
+  167  npx tsc --watch
+  168  git add .
+  169  git commit -m 'code journal issue #1 complete'
+  170  npx tsc --watch
+  171  git add .
+  172  git commit -m 'code journal issue #1 complete'
+  173  git push origin issue-1-create-an-entry 
+  174  git add .
+  175  git commit -m 'code journal issue #1 complete'
+  176  git push origin issue-1-create-an-entry 
+  177  npx tsc --watch
+  178  git add .
+  179  git commit -m 'code journal issue #1 complete'
+  180  git push origin issue-1-create-an-entry 
+  181  git add .
+  182  git commit -m 'code journal issue #1 complete'
+  183  git push origin issue-1-create-an-entry 
+  184  git switch main
+  185  git pull origin main 
+  186  git branch issue-2-view-entries
+  187  git switch issue-2-view-entries 
+  188  npx tsc --watch
+  189  git add .
+  190  git commit -m 'issue 2 view entries complete'
+  191  npx tsc --watch
+  192  git add .
+  193  git commit -m 'issue 2 view entries complete'
+  194  npx tsc --watch
+  195  git add .
+  196  git commit -m 'issue 2 view entries complete'
+  197  npx tsc --watch
+  198  git add .
+  199  git commit -m 'issue 2 view entries complete'
+  200  npx tsc --watch
+  201  git add .
+  202  git commit -m 'issue 2 view entries complete'
+  203  npx tsc --watch
+  204  git add .
+  205  git commit -m 'issue 2 view entries complete'
+  206  git push origin issue-2-view-entries 
+  207  npx tsc --watch
+  208  git add .
+  209  git commit -m 'issue 2 view entries complete with revisions 1'
+  210  git push origin issue-2-view-entries 
+  211  npx tsc --watch
+  212  git add .
+  213  git commit -m 'issue 2 view entries complete with revisions 2'
+  214  git push origin issue-2-view-entries 
+  215  npx tsc --watch
+  216  git add .
+  217  git commit -m 'issue 2 view entries complete with revisions 3'
+  218  git push origin issue-2-view-entries 
+  219  git switch main
+  220  git pull origin main
+  221  git branch issue-2-edit-an-entry
+  222  git switch issue-2-edit-an-entry 
+  223  git branch -m issue-3-edit-an-entry
+  224  git branch --list
+  225  clear
+  226  npx tsc --watch
+  227  git add .
+  228  git commit -m 'edit page text and image population'
+  229  npx tsc --watch
+  230  git add .
+  231  git commit -m 'update entry complete, rendering new dom is not'
+  232  npx tsc --watch
+  233  git add .
+  234  git commit -m 'update entry complete, rendering new dom is not'
+  235  npx tsc --watch
+  236  git add .
+  237  git commit -m 'update entry complete, rendering new dom is not'
+  238  npx tsc --watch
+  239  git add .
+  240  git commit -m 'edit entry and reset new entry form complete'
+  241  git push origin issue-3-edit-an-entry 
+  242  npx tsc --watch
+  243  git add .
+  244  git commit -m 'edit entry and reset new entry form complete 2'
+  245  git push origin issue-3-edit-an-entry 
+  246  npx tsc --watch
+  247  git add .
+  248  git commit -m 'edit entry and reset new entry form complete 3'
+  249  npx tsc --watch
+  250  git add .
+  251  git commit -m 'edit entry and reset new entry form complete 3'
+  252  npx tsc --watch
+  253  git add .
+  254  git commit -m 'edit entry and reset new entry form complete 3'
+  255  git push origin issue-3-edit-an-entry 
+  256  npx tsc --watch
+  257  git add .
+  258  git commit -m 'edit entry and reset new entry form complete 4'
+  259  npx tsc --watch
+  260  git add .
+  261  git commit -m 'edit entry and reset new entry form complete 4'
+  262  git push origin issue-3-edit-an-entry 
+  263  npx tsc --watch
+  264  git add .
+  265  git commit -m 'completed delete entry'
+  266  npx tsc --watch
+  267  git add .
+  268  git commit -m 'completed delete entry'
+  269  git branch issue-4-delete-an-entry
+  270  git switch issue-4-delete-an-entry 
+  271  git push origin issue-4-delete-an-entry 
+  272  git switch main
+  273  git add .
+  274  git commit -m 'completed delete entry 2'
+  275  git switch main
+  276  cd /workspace
+  277  git clone <git@github.com:LukeYasu/experiment-repo.git>
+  278  git clone git@github.com:LukeYasu/experiment-repo.git
+  279  git clone git@github.com:LukeYasu/experiment-repo.git
+  280  cd code-darren
+  281  cd code-journal
+  282  cd workspaces
+  283  cd workspace
+  284  cd /workspaces
+  285  cd code-journal
+  286  git switch typescript-typing-tutor 
+  287  git switch object-manipulation-2
+  288  git switch main 
+  289  cd /workspaces
+  290  git clone git@github.com:michelleschofield/week-planner.git
+  291  cd week-planner/
+  292  npm install
+  293  git pull origin main
+  294  git pull origin main
+  295  git add
+  296  git add .
+  297  git commit -m 'yayay'
+  298  git commit -m 
+  299  git commit -m 'yayay' --no-verify
+  300  git push main
+  301  git push origin main
+  302  git pull origin main
+  303  git add .
+  304  git commit -m 'modal and table styling'
+  305  git push origin main
+  306  git pull origin main
+  307  npy tsc --watch
+  308  npx tsc --watch
+  309  git add .
+  310  git commit -m 'update local storage'
+  311  git push origin main
+  312  git add .
+  313  git commit -m 'added styles'
+  314  git push origin main
+  315  git pull origin main
+  316  npx tsc --watch
+  317  git add .
+  318  git commit -m 'this is very hard'
+  319  git commit -m 'this is very hard' --no-verify
+  320  git push origin main
+  321  git branch --list
+  322  git branch dvd-screensaver
+  323  git switch dvd-screensaver 
+  324  npx tsc --watch
+  325  cd workspaces
+  326  git pull origin main
+  327  git branch practice-interview-problem
+  328  git switch practice-interview-problem 
+  329  npx tsc --watch
+  330  git switch typescript-local-storage 
+  331  git add typescript-local-storage
+  332  git commit -m 'completed local-storage exercise'
+  333  git add .
+  334  git commit -m 'completed local-storage exercise'
+  335  git switch practice-interview-problem 
+  336  npx tsc --warch
+  337  npx tsc --watch
+  338  cd practice-interview-problem
+  339  git branch --list
+  340  git branch --list
+  341  cd practice-interview-challenge/
+  342  npx tsc --watch
+  343  cd ..
+  344  git add practice-interview-challenge/
+  345  git commit -m 'completed practice-inteview-problem'
+  346  git push origin practice-interview-problem 
+  347  git switch main
+  348  git switch practice-interview-problem 
+  349  npx tsc --watch
+  350  cd practice-interview-challenge/
+  351  npx tsc --watch
+  352  cd ..
+  353  git add practice-interview-challenge/
+  354  git push origin practice-interview-problem 
+  355  git switch main 
+  356  git commit -m 'completed practice-interview-problem'
+  357  git switch main
+  358  git pull origin main
+  359  git branch typescript-timers
+  360  git switch typescript-timers 
+  361  cd typescript-timers/
+  362  mpx tsc --watch
+  363  npx tsc --watch
+  364  cd ..
+  365  cd typescript-timers/
+  366  npx tsc --watch
+  367  cd ..
+  368  git add typescript-timers/
+  369  git commit -m 'completed typescript-timers exercise'
+  370  git push origin
+  371  git push origin typescript-timers 
+  372  git switch practice-interview-problem 
+  373  git branch -m practice-interview-challenge
+  374  git push origin practice-interview-challenge 
+  375  git switch typescript-timers 
+  376  npx tsc --watch
+  377  cd typescript-timers/
+  378  npx tsc --watch
+  379  cd ..
+  380  git add typescript-timers/
+  381  git commit -m 'completed typescript-timers exercise'
+  382  git switch main 
+  383  git pull origin main
+  384  git branch typescript-carousel
+  385  git switch typescript-carousel 
+  386  cd typescript-carousel/
+  387  npx tsc --watch
+  388  git add typescript-carousel
+  389  cd ..
+  390  git add typescript-carousel
+  391  git commit -m 'completed typescrpit-carousel challenge'
+  392  npx tsc --watch
+  393  cd typescript-carousel/
+  394  npx tsc --watch
+  395  cd ..
+  396  git add typescript-carousel
+  397  git commit -m 'completed typescrpit-carousel challenge'
+  398  cd typescript-carousel/
+  399  npx tsc --watch
+  400  cd ..
+  401  git add typescript-carousel
+  402  git commit -m 'completed typescrpit-carousel challenge'
+  403  git push origin typescript-carousel 
+  404  cd typescript-carousel/
+  405  npx tsc --watch
+  406  cd ..
+  407  git add typescript-carousel/
+  408  git commit -m 'completed typescript-carousel challenge 2'
+  409  cd typescript-carousel/
+  410  npx tsc --watch
+  411  git add typescript-carousel/
+  412  cd ..
+  413  git add typescript-carousel/
+  414  git commit -m 'completed typescript-carousel challenge 2'
+  415  git push origin typescript-carousel 
+  416  git switch main
+  417  git branch typescript-destructuring
+  418  git switch typescript-destructuring 
+  419  cd typescript-destructuring
+  420  git switch main
+  421  git pull origin main
+  422  git switch typescript-destructuring 
+  423  cd typescript-destructuring
+  424  git switch  main
+  425  git pull origin main
+  426  git branch typescript-destructuring 
+  427  git switch typescript-destructuring 
+  428  cd typescript-destructuring/
+  429  npx tsc --watch
+  430  cd ..
+  431  git add typescript-destructuring/
+  432  git commit -m 'completed typescript-destructuring exercise'
+  433  cd typescript-destructuring/
+  434  npx tsc --watch
+  435  cd ..
+  436  git add typescript-destructuring/
+  437  git commit -m 'completed typescript-destructuring exercise'
+  438  git push origin typescript-destructuring 
+  439  cd typescript-destructuring/
+  440  npx tsc --watch
+  441  cd ..
+  442  git add typescript-destructuring/
+  443  git commit -m 'completed typescript-destructuring exercise'
+  444  git push origin typescript-destructuring 
+  445  git add typescript-destructuring/
+  446  git commit -m 'completed typescript-destructuring exercise'
+  447  git push origin typescript-destructuring 
+  448  git switch main 
+  449  git pull origin main 
+  450  git branch typescript-operators
+  451  git switch typescript-operators
+  452  cd typescript-operators
+  453  npx tsc --watch
+  454  cd ..
+  455  git add typescript-operators/
+  456  git commit -m 'typescript-operators exercise completed'
+  457  git push origin typescript-operators
+  458  git switch main
+  459  git switch typescript-operators
+  460  cd typescript-operators
+  461  npx tsc --watch
+  462  cd ..
+  463  git add typescript-operators/
+  464  git commit -m 'completed typescript-operators exercise 2'
+  465  git push origin typescript-operators
+  466  git switch main 
+  467  git switch typescript-operators
+  468  git switch main 
+  469  git pull origin main 
+  470  git branch array-methods
+  471  git switch array-methods 
+  472  cd array-methods/
+  473  npx tsc --watch
+  474  cd ..
+  475  git add typescript-methods/
+  476  git commit -m 'completed typescript-methods exercise'
+  477  git add array-methods/
+  478  git commit -m 'completed typescript-methods exercise'
+  479  cd array-methods/
+  480  npx tsc --watch
+  481  git add array-methods/
+  482  git commit -m 'completed typescript-methods exercise'
+  483  cd ..
+  484  cd array-methods/
+  485  npx tsc --watch
+  486  cd ..
+  487  git add array-methods/
+  488  git commit -m 'completed typescript-methods exercise'
+  489  cd ..
+  490  npx tsc --watch
+  491  cd c0824-code-solutions/
+  492  cd array-methods/
+  493  npx tsc --watch
+  494  cd ..
+  495  git add array-methods/
+  496  git commit -m 'completed typescript-methods exercise'
+  497  git push origin array-methods 
+  498  git switch main 
+  499  git switch array-methods 
+  500  git switch main
+  501  git pull origin main
+  502  git branch command-line-basics
+  503  git switch command-line-basics 
+  504  cd command-line-basics/
+  505  man mna
+  506  man man
+  507  man man
+  508  man cat
+  509  cat laziness.tt
+  510  cat laziness.txt
+  511  cat impatience.txt 
+  512  cat hubris.txt 
+  513  cat laziness.txt impatience.txt hubris.txt > three-virtues.txt
+  514  cat three-virtues.txt 
+  515  man ls
+  516  ls
+  517  ls -a
+  518  ls -F
+  519  man ls
+  520  ls lfz-staff/
+  521  ls lfz-staff/ -a
+  522  ls lfz-staff/ -F
+  523  -a ls
+  524  ls -a lfz-staff/
+  525  ls -F lfz-staff/
+  526  ls -aF lfz-staff/ > lfz-staff/contents.txt
+  527  cat lfz-staff/contents.txt 
+  528  man pwd
+  529  pwd
+  530  pwd > i-was-here.txt
+  531  ls
+  532  cat i-was-here.txt 
+  533  man echo
+  534  echo 'Hello World!'
+  535  echo 'Hello World!' > hello.txt
+  536  ls
+  537  cat hello.txt 
+  538  man touch
+  539  touch tag-youre-it.txt
+  540  touch snoot/boop.txt
+  541  ls snoot/
+  542  man mkdir
+  543  mkdir parent
+  544  ls
+  545  mkdir -p parent/child/grandchild
+  546  touch parent/child/grandchild/.gitkeep
+  547  man mv
+  548  mv pokiemans/ pokemon
+  549  ls
+  550  man rm
+  551  rm lol.txt
+  552  ls -a
+  553  rm -r kill-me/
+  554  ls
+  555  man cp
+  556  cp and-then.txt no-and-then.txt
+  557  ls
+  558  cat and-then.txt 
+  559  cat no-and-then.txt 
+  560  man history
+  561  history 
+  562  history > command-history.txt
