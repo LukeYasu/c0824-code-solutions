@@ -5,9 +5,9 @@
 Answer the following questions in the provided markdown file before turning in this exercise:
 
 - What is a CLI?
-
+  command-line interfaces
 - What is a GUI?
-
+  graphical user interface
 - Give at least one use case for each of the commands listed in this exercise.
 
   - `man`
