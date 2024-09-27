@@ -7,7 +7,3 @@ export function takeAChance(name: string): Promise<string> {
     }, 2000);
   });
 }
-
-takeAChance('Lucas')
-  .then((winMessage) => console.log(winMessage))
-  .catch((loseMessage) => console.log(loseMessage));
