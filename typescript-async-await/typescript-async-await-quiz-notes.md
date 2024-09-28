@@ -15,7 +15,7 @@ Answer the following questions in the provided markdown file before turning in t
 - How do you handle errors with `await`?
   with catch{}
 - What do `try`, `catch` and `throw` do? When do you use them?
-
+  if the promise state is fulfilled then the try code block executes. If the promise state is rejected then the catch code block runs and in that you can also use throw to throw an error
 - What happens if you forget to use `await` on a Promise? In that case, what happens to the Promise rejection?
   it gets the state of the promise such as pending because it dod not wait for it to finish
 - Which style of asynchronous programming do you prefer — callbacks, `Promise.then`, or `async/await`? Why?
