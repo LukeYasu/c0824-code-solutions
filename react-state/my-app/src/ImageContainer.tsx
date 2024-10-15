@@ -8,7 +8,7 @@ type Props = {
 export function ImageContainer({ src }: Props) {
   const [srcIndex, setSrcIndex] = useState(0);
   function handleClick() {
-    if (srcIndex >= 2) {
+    if (srcIndex >= src.length - 1) {
       setSrcIndex(0);
     } else {
       setSrcIndex(srcIndex + 1);

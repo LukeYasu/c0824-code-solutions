@@ -7,7 +7,7 @@ type Props = {
 export function ImageDescription({ desc }: Props) {
   const [index, setIndex] = useState(0);
   function handleClick() {
-    if (index >= 2) {
+    if (index >= desc.length - 1) {
       setIndex(0);
     } else {
       setIndex(index + 1);

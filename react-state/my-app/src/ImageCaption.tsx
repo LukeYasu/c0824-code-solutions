@@ -7,7 +7,7 @@ type Props = {
 export function ImageCaption({ caption }: Props) {
   const [captionIndex, setCaptionIndex] = useState(0);
   function handleClick() {
-    if (captionIndex >= 2) {
+    if (captionIndex >= caption.length - 1) {
       setCaptionIndex(0);
     } else {
       setCaptionIndex(captionIndex + 1);
