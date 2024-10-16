@@ -3,33 +3,32 @@ import './App.css';
 
 export function HotButton() {
   const [clicks, setClicks] = useState(0);
-  const [buttonColor, setButtonColor] = useState('black');
-
+  let buttonColor = 'black';
+  switch (true) {
+    case clicks <= 3:
+      buttonColor = 'purple';
+      break;
+    case clicks <= 6:
+      buttonColor = 'light-purple';
+      break;
+    case clicks <= 9:
+      buttonColor = 'red';
+      break;
+    case clicks <= 12:
+      buttonColor = 'orange';
+      break;
+    case clicks <= 15:
+      buttonColor = 'yellow';
+      break;
+    case clicks <= 18:
+      buttonColor = 'white';
+      break;
+    case clicks > 18:
+      buttonColor = 'blue';
+      break;
+  }
   function handleClick() {
     setClicks(clicks + 1);
-    switch (true) {
-      case clicks <= 3:
-        setButtonColor('purple');
-        break;
-      case clicks <= 6:
-        setButtonColor('light-purple');
-        break;
-      case clicks <= 9:
-        setButtonColor('red');
-        break;
-      case clicks <= 12:
-        setButtonColor('orange');
-        break;
-      case clicks <= 15:
-        setButtonColor('yellow');
-        break;
-      case clicks <= 18:
-        setButtonColor('white');
-        break;
-      case clicks > 18:
-        setButtonColor('blue');
-        break;
-    }
   }
   return (
     <>
