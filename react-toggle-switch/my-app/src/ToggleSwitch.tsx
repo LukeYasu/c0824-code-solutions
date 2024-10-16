@@ -2,21 +2,20 @@ import { useState } from 'react';
 import './App.css';
 
 export function ToggleSwitch() {
-  const [toggle, setToggle] = useState(true);
+  const [isOn, setIsOn] = useState(true);
   let onOff = '';
-  if (toggle) {
+  let switchAppearance = '';
+  if (isOn) {
     onOff = 'on';
+    switchAppearance = 'on-container';
   } else {
     onOff = 'off';
+    switchAppearance = 'off-container';
   }
   return (
     <div className="container">
-      <div className={onOff}>
-        <div
-          onClick={() => {
-            toggle === true ? setToggle(false) : setToggle(true);
-          }}
-          className="switch"></div>
+      <div className={switchAppearance}>
+        <div onClick={() => setIsOn(!isOn)} className="switch"></div>
       </div>
       <div className="on-off-text">{onOff}</div>
     </div>
