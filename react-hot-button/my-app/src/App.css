@@ -1,0 +1,45 @@
+body {
+  background-color: lightblue;
+}
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.black {
+  background-color: black;
+}
+
+.purple {
+  background-color: rgb(73, 0, 73);
+}
+
+.light-purple {
+  background-color: rgb(119, 74, 119);
+}
+
+.red {
+  background-color: red;
+}
+
+.orange {
+  background-color: orange;
+  color: black;
+}
+
+.yellow {
+  background-color: yellow;
+  color: black;
+}
+
+.white {
+  background-color: white;
+  color: black;
+}
+
+.blue {
+  background-color: blue;
+}
