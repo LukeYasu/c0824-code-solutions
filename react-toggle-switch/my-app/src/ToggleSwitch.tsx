@@ -2,7 +2,7 @@ import { useState } from 'react';
 import './App.css';
 
 export function ToggleSwitch() {
-  const [toggle, setToggle] = useState('switch-container-off');
+  const [toggle, setToggle] = useState('off');
 
   return (
     <>
@@ -10,12 +10,11 @@ export function ToggleSwitch() {
         <div className={toggle}>
           <div
             onClick={() => {
-              toggle === 'switch-container-off'
-                ? setToggle('switch-container-on')
-                : setToggle('switch-container-off');
+              toggle === 'off' ? setToggle('on') : setToggle('off');
             }}
             className="switch"></div>
         </div>
+        <div className="on-off-text">{toggle}</div>
       </div>
     </>
   );
