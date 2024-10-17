@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import './App.css';
 import { FaPlay, FaPause } from 'react-icons/fa';
+// import { ReactionTime } from './ReactionTime';
 
 function App() {
   const [elapsedSeconds, setElapsedSeconds] = useState(0);
@@ -17,9 +18,14 @@ function App() {
       setIntervalId(undefined);
     }
   }
+  function handleStopwatchClick() {
+    if (!intervalId) {
+      setElapsedSeconds(0);
+    }
+  }
   return (
     <div className="container">
-      <div className="stopwatch" onClick={() => setElapsedSeconds(0)}>
+      <div className="stopwatch" onClick={handleStopwatchClick}>
         {elapsedSeconds}
       </div>
       <div className="start-stop" onClick={handleClick}>
@@ -27,6 +33,7 @@ function App() {
       </div>
     </div>
   );
+  // return <ReactionTime />;
 }
 
 export default App;
