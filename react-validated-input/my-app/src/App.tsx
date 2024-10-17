@@ -1,8 +1,7 @@
 import { useState } from 'react';
-import { FaCheck } from 'react-icons/fa';
-
-import './App.css';
+import { FaCheck, FaTimes } from 'react-icons/fa';
 import { IconType } from 'react-icons';
+import './App.css';
 
 function App() {
   const [password, setPassword] = useState('');
@@ -18,13 +17,14 @@ function App() {
   }
   return (
     <>
-      <h3>Password</h3>
+      <label htmlFor="password">Password </label>
       <input
+        id="password"
         type="password"
         value={password}
         onChange={(e) => setPassword(e.target.value)}></input>
       <i className={handlePassword('green', 'red')}>
-        {handlePassword(<FaCheck />, ' x')}
+        &nbsp;{handlePassword(<FaCheck />, <FaTimes />)}
       </i>
       <p className="error-message red">
         {password.length === 0
@@ -46,6 +46,7 @@ function App() {
           : /\d/.test(password)
           ? 'password requires a capital letter and a symbol'
           : 'password requires a capital letter a digit and a symbol'}
+        &nbsp;
       </p>
     </>
   );
