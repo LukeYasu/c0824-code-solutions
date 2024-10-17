@@ -37,7 +37,7 @@ function App() {
           ? 'password requires a symbol'
           : /^(?=.*[A-Z])(?=.*[!@#$%^&*()]).+$/.test(password)
           ? 'password requires a digit'
-          : /^(?=.*[A-Z])(?=.*[!@#$%^&*()]).+$/.test(password)
+          : /^(?=.*\d)(?=.*[!@#$%^&*()]).+$/.test(password)
           ? 'password requires capital letter'
           : /[A-Z]/.test(password)
           ? 'password requires a digit and a symbol'
