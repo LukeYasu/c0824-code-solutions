@@ -1,0 +1,31 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.stopwatch {
+  font-size: 7rem;
+  border: 5px solid white;
+  border-radius: 100%;
+  height: 500px;
+  width: 500px;
+  line-height: 500px;
+}
+
+.start-stop {
+  font-size: 4rem;
+  align-self: center;
+  margin: 2rem;
+}
+
+.button:hover {
+  cursor: pointer;
+}
