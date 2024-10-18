@@ -1,11 +1,7 @@
 type Props = {
-  index: number;
+  handleNext: () => void;
 };
 
 export function NextButton(props: Props) {
-  function handleClick() {
-    props.index + 1;
-  }
-
-  return <button onClick={handleClick}>Next</button>;
+  return <button onClick={props.handleNext}>Next</button>;
 }

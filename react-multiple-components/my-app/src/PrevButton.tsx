@@ -1,10 +1,7 @@
 type Props = {
-  index: number;
+  handlePrev: () => void;
 };
 
 export function PrevButton(props: Props) {
-  function handleClick() {
-    props.index + 1;
-  }
-  return <button onClick={handleClick}>Prev</button>;
+  return <button onClick={props.handlePrev}>Prev</button>;
 }

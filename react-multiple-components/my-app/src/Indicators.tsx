@@ -1,18 +1,19 @@
 type Props = {
-  items: string[];
+  onClick: (index: number) => void;
+  itemsLength: number;
   index: number;
 };
 
 export function Indicators(props: Props) {
   const indicators = [];
-  for (let i = 0; i < props.items.length; i++) {
-    if (i === props.index) {
-      indicators.push(
-        <button style={{ backgroundColor: 'blue' }}>{i + 1}</button>
-      );
-    } else {
-      indicators.push(<button>{i + 1}</button>);
-    }
+  for (let i = 0; i < props.itemsLength; i++) {
+    indicators.push(
+      <button
+        onClick={() => props.onClick(i)}
+        style={{ backgroundColor: i === props.index ? 'blue' : '#1a1a1a' }}>
+        {i + 1}
+      </button>
+    );
   }
   return <div>{indicators}</div>;
 }

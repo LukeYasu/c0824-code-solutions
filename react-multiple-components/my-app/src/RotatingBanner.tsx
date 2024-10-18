@@ -5,24 +5,41 @@ import { NextButton } from './NextButton';
 import { PrevButton } from './PrevButton';
 
 export function RotatingBanner() {
-  const [items, setItems] = useState([
+  const [index, setIndex] = useState(0);
+  const items = [
     'Aardvark',
     'Bengal',
     'Caterpillar',
     'Dromedary',
     'Elephant',
     'Ferret',
-  ]);
-  const [index, setIndex] = useState(0);
+  ];
+  function handleNext() {
+    if (index > items.length - 2) {
+      setIndex(0);
+    } else setIndex(index + 1);
+  }
+  function handlePrev() {
+    if (index === 0) {
+      setIndex(items.length - 1);
+    } else setIndex(index - 1);
+  }
+  function handleClick(selectedIndex: number) {
+    setIndex(selectedIndex);
+  }
   return (
     <>
       <Banner item={items[index]} />
-      <NextButto />
+      <NextButton handleNext={handleNext} />
       <br />
       <br />
-      <Indicators items={items} index={index} />
+      <Indicators
+        itemsLength={items.length}
+        index={index}
+        onClick={handleClick}
+      />
       <br />
-      <PrevButton />
+      <PrevButton handlePrev={handlePrev} />
     </>
   );
 }
