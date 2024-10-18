@@ -1,17 +1,18 @@
-export function Indicators() {
-  const items = [1, 2, 3, 4, 5, 6];
+type Props = {
+  items: string[];
+  index: number;
+};
+
+export function Indicators(props: Props) {
   const indicators = [];
-  const isSelected = true;
-  const buttonColor = 'blue';
-  for (let i = 0; i < items.length; i++) {
-    if ((i = 3)) {
+  for (let i = 0; i < props.items.length; i++) {
+    if (i === props.index) {
       indicators.push(
-        <button style={{ backgroundColor: 'blue' }}>{items[i]}</button>
+        <button style={{ backgroundColor: 'blue' }}>{i + 1}</button>
       );
+    } else {
+      indicators.push(<button>{i + 1}</button>);
     }
-    indicators.push(
-      <button >{items[i]}</button>
-    );
   }
   return <div>{indicators}</div>;
 }

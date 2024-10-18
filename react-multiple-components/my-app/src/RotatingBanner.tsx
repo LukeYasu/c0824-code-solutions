@@ -16,10 +16,11 @@ export function RotatingBanner() {
   const [index, setIndex] = useState(0);
   return (
     <>
-      <Banner />
-      <NextButton />
+      <Banner item={items[index]} />
+      <NextButto />
       <br />
-      <Indicators />
+      <br />
+      <Indicators items={items} index={index} />
       <br />
       <PrevButton />
     </>
