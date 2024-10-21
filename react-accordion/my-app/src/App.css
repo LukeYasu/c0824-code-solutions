@@ -5,7 +5,7 @@
   text-align: center;
 }
 
-.topic-header {
+h1 {
   border: 1px solid white;
   padding: 1rem;
 }
@@ -15,7 +15,7 @@ p {
   padding: 1rem;
 }
 
-.topic-header:hover {
+h1:hover {
   cursor: pointer;
 }
 

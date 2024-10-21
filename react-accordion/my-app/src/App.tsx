@@ -32,7 +32,7 @@ function App() {
   return (
     <TopicCard
       topics={topics}
-      handleClick={handleClick}
+      onClick={handleClick}
       selectedTopic={openTopic}
     />
   );
