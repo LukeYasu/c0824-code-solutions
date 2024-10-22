@@ -3,7 +3,7 @@ import './App.css';
 import { TopicCard } from './TopicCard';
 
 function App() {
-  const [openTopic, setOpenTopic] = useState(0);
+  const [openTopic, setOpenTopic] = useState<number>();
   const topics = [
     {
       id: 1,
@@ -25,17 +25,20 @@ function App() {
     },
   ];
 
-  function handleClick(selectedTopic: number) {
-    setOpenTopic(selectedTopic);
+  function handleClick(selected: number) {
+    if (selected === openTopic) {
+      setOpenTopic(undefined);
+    } else setOpenTopic(selected);
   }
 
-  return (
+  return topics.map((topic) => (
     <TopicCard
-      topics={topics}
+      key={topic.id}
+      topic={topic}
       onClick={handleClick}
       selectedTopic={openTopic}
     />
-  );
+  ));
 }
 
 export default App;

@@ -1,17 +1,17 @@
 type Props = {
-  topics: { id: number; title: string; content: string }[];
+  topic: { id: number; title: string; content: string };
   onClick: (clickedTopic: number) => void;
-  selectedTopic: number;
+  selectedTopic: number | undefined;
 };
 
-export function TopicCard({ topics, onClick, selectedTopic }: Props) {
-  const topic = topics.map((topic) => (
-    <div key={topic.id}>
+export function TopicCard({ topic, onClick, selectedTopic }: Props) {
+  const topicCard = (
+    <div>
       <h1 className="topic-header" onClick={() => onClick(topic.id)}>
         {topic.title}
       </h1>
-      {selectedTopic === topic.id ? <p>{topic.content}</p> : <></>}
+      {selectedTopic === topic.id && <p>{topic.content}</p>}
     </div>
-  ));
-  return <div>{topic}</div>;
+  );
+  return <div>{topicCard}</div>;
 }
