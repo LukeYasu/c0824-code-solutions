@@ -43,9 +43,14 @@ function App() {
       alt: "Maki Zen'in",
     },
   ];
-  // useEffect(() => {
-  //   const intervalId = setInterval(setImageIndex(imageIndex + 1), 1000);
-  // }, []);
+  useEffect(() => {
+    const intervalId = setInterval(
+      () => setImageIndex((prev) => prev + 1),
+      500
+    );
+    return clearInterval(intervalId);
+  }, []);
+
   const selectorButtons = images.map((_, index) => {
     return (
       <Buttons
