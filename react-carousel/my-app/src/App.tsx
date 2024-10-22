@@ -45,10 +45,10 @@ function App() {
   ];
   useEffect(() => {
     const intervalId = setInterval(
-      () => setImageIndex((prev) => prev + 1),
+      () => setImageIndex((prev) => (prev >= images.length - 1 ? 0 : prev + 1)),
       500
     );
-    return clearInterval(intervalId);
+    return () => clearInterval(intervalId);
   }, []);
 
   const selectorButtons = images.map((_, index) => {
