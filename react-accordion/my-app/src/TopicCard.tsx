@@ -5,7 +5,7 @@ type Props = {
 };
 
 export function TopicCard({ topic, onClick, selectedTopic }: Props) {
-  const topicCard = (
+  return (
     <div>
       <h1 className="topic-header" onClick={() => onClick(topic.id)}>
         {topic.title}
@@ -13,5 +13,4 @@ export function TopicCard({ topic, onClick, selectedTopic }: Props) {
       {selectedTopic === topic.id && <p>{topic.content}</p>}
     </div>
   );
-  return <div>{topicCard}</div>;
 }
