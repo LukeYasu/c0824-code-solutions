@@ -8,12 +8,6 @@ import {
   FaRegCircle,
 } from 'react-icons/fa';
 import { ImageDisplay } from './ImageDisplay';
-import '../public/images/fushiguro.webp';
-import '../public/images/inumaki.webp';
-import '../public/images/itadori.webp';
-import '../public/images/kugisaki.webp';
-import '../public/images/panda.webp';
-import '../public/images/zen-in.webp';
 
 function App() {
   const [imageIndex, setImageIndex] = useState(0);
@@ -46,7 +40,7 @@ function App() {
   useEffect(() => {
     const intervalId = setInterval(
       () => setImageIndex((prev) => (prev >= images.length - 1 ? 0 : prev + 1)),
-      500
+      3000
     );
     return () => clearInterval(intervalId);
   }, []);
@@ -75,15 +69,13 @@ function App() {
     }
   }
   function handleSelect(index: number) {
-    if (index !== imageIndex) {
-      setImageIndex(index);
-    }
+    setImageIndex(index);
   }
   return (
     <>
       <Buttons onClick={handlePrev} appearance={<FaChevronCircleLeft />} />
       <ImageDisplay
-        src={`../public${images[imageIndex].src}`}
+        src={images[imageIndex].src}
         alt={images[imageIndex].alt}
         className="display-image"
       />
