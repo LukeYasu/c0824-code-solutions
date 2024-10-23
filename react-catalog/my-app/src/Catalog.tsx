@@ -31,24 +31,35 @@ export function Catalog() {
       </div>
     );
   }
-  function catalogCards(item: Product) {
-    return (
-      <Link
-        to={'details/' + item.productId}
-        className="border-2 border-slate w-1/4 m-1">
-        <img key={item.name} src={item.imageUrl} />
-        <h3>{item.name}</h3>
-        <h4>{toDollars(item.price)}</h4>
-        <p>{item.shortDescription}</p>
-      </Link>
-    );
-  }
+
   return (
     <>
-      <h1 className="text-6xl">Catalog</h1>
+      <h1 className="text-7xl border-b-2 pb-5 m-5">Catalog</h1>
       <div className="flex flex-wrap justify-center">
         {items.map((item) => catalogCards(item))}
       </div>
     </>
+  );
+}
+function catalogCards(item: Product) {
+  return (
+    <Link
+      to={'details/' + item.productId}
+      className="border-2 border-slate rounded-lg w-1/4 m-1 border-solid p-5">
+      <div className="self-center">
+        <img
+          className="rounded-lg"
+          key={item.productId}
+          alt={item.name}
+          src={item.imageUrl}
+        />
+        <br />
+        <h3 className="text-xl font-medium">{item.name}</h3>
+        <br />
+        <h4>{toDollars(item.price)}</h4>
+        <br />
+        <p>{item.shortDescription}</p>
+      </div>
+    </Link>
   );
 }
