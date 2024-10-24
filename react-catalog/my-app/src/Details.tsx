@@ -14,7 +14,6 @@ export function Details() {
       try {
         const value = await readProduct(itemId);
         setItem(value);
-        console.log(value);
       } catch (error) {
         setError(error);
         console.error('Error: ', error);
@@ -23,10 +22,11 @@ export function Details() {
       }
     }
     if (itemId) {
-      setIsLoading(false);
+      setIsLoading(true);
       loadItem(+itemId);
     }
   }, [itemId]);
+
   if (isLoading) {
     return <div>Loading...</div>;
   }
@@ -60,6 +60,4 @@ export function Details() {
       </div>
     );
   }
-
-  return <div className="m-20">{itemId}</div>;
 }

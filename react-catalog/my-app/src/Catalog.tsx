@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { Product, readCatalog, toDollars } from './lib';
+import { type Product, readCatalog, toDollars } from './lib';
 import { Link } from 'react-router-dom';
 
 export function Catalog() {
@@ -36,12 +36,14 @@ export function Catalog() {
     <>
       <h1 className="text-7xl border-b-2 pb-5 m-5">Catalog</h1>
       <div className="flex flex-wrap justify-center">
-        {items.map((item) => catalogCards(item))}
+        {items.map((item) => (
+          <CatalogCards item={item} />
+        ))}
       </div>
     </>
   );
 }
-function catalogCards(item: Product) {
+function CatalogCards({ item }: { item: Product }) {
   return (
     <Link
       to={'details/' + item.productId}
