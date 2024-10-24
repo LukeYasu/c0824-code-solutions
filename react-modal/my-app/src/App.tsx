@@ -2,19 +2,19 @@ import { useState } from 'react';
 import './App.css';
 import { Modal } from './Modal';
 
-export function App() {
-  const [isOpen, SetIsOpen] = useState(false);
+export default function App() {
+  const [isOpen, setIsOpen] = useState(false);
   function handleClick() {
-    SetIsOpen(true);
+    setIsOpen(true);
   }
 
   function handleCancel() {
-    SetIsOpen(false);
+    setIsOpen(false);
   }
 
   function handleDelete() {
     alert('You have deleted');
-    SetIsOpen(false);
+    setIsOpen(false);
   }
 
   return (
@@ -28,5 +28,3 @@ export function App() {
     </>
   );
 }
-
-export default App;
