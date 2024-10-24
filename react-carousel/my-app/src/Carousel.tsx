@@ -6,7 +6,7 @@ import {
 } from 'react-icons/fa';
 import { Buttons } from './Buttons';
 import { ImageDisplay } from './ImageDisplay';
-import { useEffect, useState } from 'react';
+import { useCallback, useEffect, useState } from 'react';
 
 type Props = {
   images: { src: string; alt: string }[];
@@ -15,14 +15,19 @@ type Props = {
 export function Carousel({ images }: Props) {
   const [imageIndex, setImageIndex] = useState(0);
 
-  // const callback = useCallback(() => imageIndex, []);
+  const handleNext = useCallback(() => {
+    if (imageIndex >= images.length - 1) {
+      setImageIndex(0);
+    } else {
+      setImageIndex(imageIndex + 1);
+    }
+  }, [images.length, imageIndex]);
+
   useEffect(() => {
-    const intervalId = setTimeout(
-      () => setImageIndex((prev) => (prev >= images.length - 1 ? 0 : prev + 1)),
-      1000
-    );
-    return () => clearTimeout(intervalId);
-  }, [imageIndex]);
+    const timeoutId = setTimeout(() => handleNext(), 3000);
+    return () => clearTimeout(timeoutId);
+  }, [handleNext]);
+
   const selectorButtons = images.map((_, index) => {
     return (
       <Buttons
@@ -32,20 +37,11 @@ export function Carousel({ images }: Props) {
       />
     );
   });
-  function handleNext() {
-    if (imageIndex >= images.length - 1) {
-      setImageIndex(0);
-    } else {
-      setImageIndex(imageIndex + 1);
-    }
-  }
+
   function handlePrev() {
-    if (imageIndex <= 0) {
-      setImageIndex(images.length - 1);
-    } else {
-      setImageIndex(imageIndex - 1);
-    }
+    setImageIndex((prev) => (prev <= 0 ? images.length - 1 : imageIndex - 1));
   }
+
   function handleSelect(index: number) {
     setImageIndex(index);
   }
