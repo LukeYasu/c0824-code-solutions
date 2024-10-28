@@ -20,15 +20,15 @@ function App() {
         isOpen={isOpen}
         positionTo={buttonRef.current}
         onClose={() => setIsOpen(false)}>
-        {isOpen && (
+        {
           <ul className="border shadow-2xl bg-black list-none ">
             {menuItems.map((item) => (
-              <li key={item} className="border">
+              <li key={item} className="border bg-black">
                 {item}
               </li>
             ))}
           </ul>
-        )}
+        }
       </Popup>
       <p>popipopipopoipipipoipipopipo</p>
     </>
