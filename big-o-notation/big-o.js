@@ -21,14 +21,14 @@ function uniqueLinear(words) {
 function uniqueQuadratic(words) {
   const unique = []; //                // 1 * 1 = O(1)
   for (
-    let i = 0; //                      // 1 * n = O(n)
+    let i = 0; //                      // 1 * n = O(1)
     i < words.length; //               // 2 * n = O(n)
     i++ //                             // 2 * n = O(n)
   ) {
     const word = words[i]; //          // 2 * n = O(n)
     let isUnique = true; //            // 1 * n = O(n)
     for (
-      let c = 0; //                    // 1 * n * n = O(n^2)
+      let c = 0; //                    // 1 * n * n = O(n)
       c < i; //                        // 1 * n * n = O(n^2)
       c++ //                           // 2 * n * n = O(n^2)
     ) {
