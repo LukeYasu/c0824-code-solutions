@@ -1,5 +1,22 @@
 import { evenNumbers, toDollars, divideBy, multiplyBy } from './numbers';
 
+export function isIsogram(str: string): boolean {
+  for (let i = 0; i < str.length; i++) {
+    const string = str.toLowerCase().split('');
+    string.splice(i, 1);
+    if (string.join('').includes(str[i])) {
+      return false;
+    }
+  }
+  return true;
+}
+
+describe('Isogram', () => {
+  it('returns true as a isogram', () => {
+    expect(isIsogram('isogram')).toStrictEqual(true);
+  });
+});
+
 describe('evenNumbers', () => {
   it('Returns a new array that contains only the even numbers in the given array.', () => {
     expect(evenNumbers([1, 4, 5, 10, 0])).toStrictEqual([4, 10, 0]);
