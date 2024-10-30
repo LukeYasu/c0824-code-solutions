@@ -26,14 +26,23 @@ describe('toDollars', () => {
   it('Returns a number formatted in dollars and cents.', () => {
     expect(toDollars(3)).toBe('$3.00');
   });
+  it('Returns a number formatted in dollars and cents.', () => {
+    expect(toDollars(3.05)).toBe('$3.05');
+  });
 });
 describe('divideBy', () => {
   it('Returns a new array of numbers where every entry has been divided by the given divisor. Does not modify the original array.', () => {
     expect(divideBy([2, 4, 6], 2)).toStrictEqual([1, 2, 3]);
   });
+  it('Returns a new array of numbers where every entry has been divided by the given divisor. Does not modify the original array.', () => {
+    expect(divideBy([2, 4, 6], 1)).toEqual([2, 4, 6]);
+  });
 });
 describe('multiplyBy', () => {
   it('Modifies an object by multiplying the value of each key, but only if that value is a number. Key names are arbitrary.', () => {
-    expect(multiplyBy({ key: 5, x: 'string' }, 2)).toEqual({ key: 10 });
+    expect(multiplyBy({ key: 'hello', value: 3 }, 2)).toEqual({
+      key: 'hello',
+      value: 6,
+    });
   });
 });
