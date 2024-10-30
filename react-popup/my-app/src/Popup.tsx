@@ -24,16 +24,17 @@ export function Popup({ isOpen, positionTo, onClose, children }: Props) {
             height: '100vh',
             filter: 'opacity(50%)',
             backgroundColor: 'black',
-          }}></div>
+          }}>
+          <div
+            className="absolute"
+            style={{
+              top,
+              left,
+            }}>
+            {children}
+          </div>
+        </div>
       )}
-      <div
-        className="absolute"
-        style={{
-          top: `${top}`,
-          left: `${left}`,
-        }}>
-        {children}
-      </div>
     </>,
     document.body
   );
