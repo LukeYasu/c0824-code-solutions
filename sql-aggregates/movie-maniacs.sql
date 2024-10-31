@@ -1,5 +1,5 @@
-select sum("p"."amount"), "c"."firstName", "c"."lastName"
+select "c"."firstName", "c"."lastName", sum("p"."amount") as "total"
 from "customers" as "c"
-join "rentals" as "r" using ("customerId")
-join "payments" as "p" using ("rentalId")
-group by "c"."customerId"
+join "payments" as "p" using ("customerId")
+group by "c"."customerId";
+order by "total" desc
