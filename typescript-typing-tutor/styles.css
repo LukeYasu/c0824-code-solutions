@@ -1,0 +1,40 @@
+.text-challenge {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+  width: 100vw;
+  font-family: Outfit, sans-serif;
+}
+
+span {
+  font-size: 50px;
+}
+
+.untyped {
+  color: black;
+}
+
+.upcoming-character {
+  text-decoration: underline;
+}
+
+.typed-correct {
+  color: green;
+}
+
+.typed-incorrect {
+  color: red;
+}
+
+.outfit-font {
+  font-family: Outfit, sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
+.accuracy {
+  font-size: 20px;
+  font-family: sans-serif;
+}
