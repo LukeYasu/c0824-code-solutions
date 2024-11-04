@@ -60,6 +60,8 @@ app.post('/api/grades', async (req, res, next) => {
     if (!Number.isInteger(+score)) {
       throw new ClientError(400, `Non-integer gradeId: ${score}`);
     }
+    if (score > 100 || score < 0)
+      throw new ClientError(400, `score: ${score} is invalid`);
     const sql = `
     insert into "grades" ("course", "name", "score")
     values ($1, $2, $3)
