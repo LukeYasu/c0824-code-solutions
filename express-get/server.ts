@@ -1,6 +1,6 @@
 import express from 'express';
 import pg from 'pg';
-import { errorMiddleware } from './lib/index.js';
+import { ClientError, errorMiddleware } from './lib/index.js';
 
 const db = new pg.Pool({
   connectionString: 'postgres://dev:dev@localhost/pagila',
@@ -31,6 +31,9 @@ app.get('/api/films', async (req, res, next) => {
 app.get('/api/films/:filmId', async (req, res, next) => {
   try {
     const { filmId } = req.params;
+    if (!Number.isInteger(+filmId)) {
+      throw new ClientError(400, `${filmId} is not integer`);
+    }
     const sql = `
     select "description", "filmId", "replacementCost", "title"
     from "films"
@@ -38,7 +41,8 @@ app.get('/api/films/:filmId', async (req, res, next) => {
     `;
     const params = [filmId];
     const result = await db.query(sql, params);
-    res.json(result.rows);
+    if (!filmId) throw new ClientError(404, `${filmId} not found`);
+    res.json(result.rows[0]);
   } catch (err) {
     next(err);
   }
