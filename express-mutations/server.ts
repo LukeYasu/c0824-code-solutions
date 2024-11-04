@@ -62,7 +62,7 @@ app.put('/api/actors/:actorId', async (req, res, next) => {
     const { firstName, lastName } = req.body;
     const { actorId } = req.params;
     if (!Number.isInteger(+actorId)) {
-      throw new ClientError(404, `${actorId} not found`);
+      throw new ClientError(400, `${actorId} not an integer`);
     }
     if (firstName === undefined) {
       throw new ClientError(400, `firstName is required`);
@@ -79,6 +79,7 @@ app.put('/api/actors/:actorId', async (req, res, next) => {
     `;
     const params = [firstName, lastName, actorId];
     const actor = await db.query(sql, params);
+    if (!actorId) throw new ClientError(404, 'not found');
     res.status(200).json(actor.rows[0]);
   } catch (err) {
     next(err);
@@ -98,8 +99,9 @@ app.delete('/api/actors/:actorId', async (req, res, next) => {
     returning *;
     `;
     const params = [actorId];
-    const result = await db.query(sql, params);
-    res.status(204).json(result.rows[0]);
+    await db.query(sql, params);
+    if (!actorId) throw new ClientError(404, 'not found');
+    res.sendStatus(204);
   } catch (err) {
     next(err);
   }
