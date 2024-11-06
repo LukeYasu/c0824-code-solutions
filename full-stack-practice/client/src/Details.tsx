@@ -1,6 +1,6 @@
 import { useNavigate, useParams } from 'react-router-dom';
 import { useEffect, useState } from 'react';
-import { type Product, readProduct, toDollars } from './lib';
+import { type Product, toDollars } from './lib';
 
 export function Details() {
   const [item, setItem] = useState<Product>();
@@ -12,8 +12,10 @@ export function Details() {
   useEffect(() => {
     async function loadItem(itemId: number): Promise<void> {
       try {
-        const value = await readProduct(itemId);
-        setItem(value);
+        const response = await fetch(`/api/products/${itemId}`);
+        if (!response.ok) throw new Error(`response status ${response.status}`);
+        const product = await response.json();
+        setItem(product);
       } catch (error) {
         setError(error);
         console.error('Error: ', error);

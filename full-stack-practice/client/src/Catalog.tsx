@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { type Product, readCatalog, toDollars } from './lib';
+import { type Product, toDollars } from './lib';
 import { Link } from 'react-router-dom';
 
 export function Catalog() {
@@ -9,18 +9,24 @@ export function Catalog() {
   useEffect(() => {
     async function loadItems(): Promise<void> {
       try {
-        const values = await readCatalog();
-        setItems(values);
-        console.log(values);
+        const response = await fetch('/api/products', {
+          method: 'GET',
+        });
+        if (!response.ok) throw new Error(`response status ${response.status}`);
+        const products = await response.json();
+        setItems(products);
+        console.log(products);
       } catch (error) {
         setError(error);
         console.error('Error: ', error);
+        alert(error);
       } finally {
         setIsLoading(false);
       }
     }
     loadItems();
   }, []);
+
   if (isLoading) {
     return <div>Loading...</div>;
   }
