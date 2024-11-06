@@ -1,10 +1,9 @@
 import { Link, Outlet } from 'react-router-dom';
 import { FaShoppingCart } from 'react-icons/fa';
-import { useContext } from 'react';
-import { CartContext } from './CartContext';
+import { useCart } from './useCart';
 
 export function Header() {
-  const { cart } = useContext(CartContext);
+  const { cart } = useCart();
   return (
     <div>
       <nav className="flex px-4 text-white bg-gray-900">
