@@ -43,7 +43,7 @@ export function Catalog() {
       <h1 className="text-7xl border-b-2 pb-5 m-5">Catalog</h1>
       <div className="flex flex-wrap justify-center">
         {items.map((item) => (
-          <CatalogCards item={item} />
+          <CatalogCards item={item} key={item.productId} />
         ))}
       </div>
     </>
